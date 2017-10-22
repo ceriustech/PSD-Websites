@@ -13,7 +13,7 @@
 
 <div class="row">
   <div class="column">
-    <h2>What IS This Repository For?</h2>
+    <h2>What Is This Repository For?</h2>
     <p>This repository is created to share any of my psd template created websites or web applications. Being that web-design can be an important part of the development process, psd templates offers an easy solutions for web developers who are more on the coding side of the process to quickly start coding a beautiful website without thinking about the design. </p>
   </div>
   <div class="column">
