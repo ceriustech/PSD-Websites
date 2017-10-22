@@ -1,0 +1,822 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+/*Reset CSS Classes*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*Reset Classes End*/
+
+/*Helper Classes Begin*/
+
+.alignLeft {
+    float: left;
+}
+
+.alignRight {
+    float: right;
+}
+
+.margin-bottom-10 {
+    margin-bottom: 10px;
+}
+
+.margin-bottom-20 {
+    margin-bottom: 20px;
+}
+
+.margin-bottom-10 {
+    margin-bottom: 10px;
+}
+
+.margin-bottom-30 {
+    margin-bottom: 30px;
+}
+
+.margin-bottom-40 {
+    margin-bottom: 40px;
+}
+
+strong, b {
+    font-weight: 700;
+}
+
+em, i {
+    font-style: italic;
+}
+
+p, ul li, ol li, {
+    font-size: 16px;
+    line-height: 23px;
+}
+/*Helper Classes End*/
+
+
+/* Gerneral Rules */
+
+*{
+  box-sizing: border-box;
+}
+
+.container {
+   
+    max-width: 1100px;
+    width: 100%;
+    margin: 0 auto; 
+    position: relative;
+    overflow: hidden;
+    padding: 40px 20px;
+    
+}
+
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+@font-face {
+    font-family: 'HelveticaNeue-Thin';
+    src: local('HelveticaNeue-Thin.otf'), url('HelveticaNeue-Thin.otf') format('opentype'); 
+    
+}
+
+#hero {
+    background-image: linear-gradient(rgba(218, 51, 46, 0.6), rgba(218, 51, 46, 0.6)), url('../img/hero-bg.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+h2 {
+    font-size: 52px;
+    font-weight: 700px;
+    text-transform: uppercase;
+}
+/* Navigation */
+.nav li {
+    display: inline-block;
+}
+
+.nav li a{
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-left: 30px;
+    border-bottom: 4px solid white transparent;
+}
+
+.nav li a:hover {
+    border-bottom: 4px solid white;
+    transition: border-bottom 0.1s, color 0.1s;
+}
+
+#hero h2 {
+    font-size: 48px;
+    color: white;
+    margin-bottom: 40px;
+}
+
+.inline a {
+    text-decoration: none; 
+}
+
+.cta {
+    display: inline-block;
+    margin-top: 90px;
+    position: relative;
+}
+
+.imgs {
+    float: right;
+    position: absolute;
+    right: -135px
+}
+
+.iphone {
+    width: 85%;
+    position: relative;
+    margin-bottom: -240px;
+}
+
+.cta-info {
+    width: 50%;
+    padding-left: 50px;  
+    float: left;
+}
+
+.cta-info h2{
+    position: relative;
+    right: 50px;
+   
+}
+
+.cta-info p.hero-paragraph {
+    font-size: 36px;
+    line-height: 40px;
+    font-family: 'HelveticaNeue-Thin';
+     color: white;
+    margin-bottom: 55px; 
+    padding-left: 25px;
+}
+
+.cta-button {
+    padding: 25px 25px;
+    position: relative;
+    left: 2px;
+    background: #282828;
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    transform: 0.3s;
+}
+
+.cta-button:hover {
+    background: #424242;
+    transition: 0.3s;
+}
+
+.phone-icon {
+    vertical-align: middle;
+    padding-right: 20px;
+}
+
+
+
+
+
+
+/* App Features */
+
+#app-features .container {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+#app-features h2 {
+    color: #8a8a8a;
+    margin-bottom: 40px;
+}
+
+.p-features {
+    font-family: 'HelveticaNeue-Thin';
+    font-size: 22px;
+    line-height: 25px;
+    color: #8a8a8a;
+    padding: 0px 100px;
+    margin-bottom: 50px;
+}
+
+.col-4-app {
+    width: 33%;
+    float: left; 
+    padding: 0px 45px;
+}
+
+.col-4-app p {
+    font-family: 'HelveticaNeue-Thin';
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.row {
+    overflow: hidden;
+}
+
+.row h3 {
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: 30px 0
+}
+
+.row p {
+    color: #646464;
+}
+
+/* Nose  */
+
+#nose {
+    background-color: #d7dedc;
+    background-image: url("../img/background-logo.png");
+    background-size: cover;
+    background-position: center;
+    height: 850px;
+    
+}
+
+.download-info {
+    width: 60%;
+    padding: 200px 0px;
+    height: 900px; 
+}
+
+
+.download-info h2 {
+    padding-bottom: 5px;
+    color: white;
+    font-weight: 700;
+    position: relative;
+    top: -35px;
+}
+
+.nose-m {
+    padding-bottom: 7px;
+}
+
+.download-info p {
+    font-size: 24px;
+    line-height: 30px;
+    padding-bottom: 30px;
+    color: #8a8a8a;
+}
+
+.download-btn  {
+    padding: 10px 25px;
+    background: #d9332d;
+    border-radius: 50px;
+    color: white;
+    text-decoration: none;
+    transition:  0.3s;
+    margin-left: 20px;
+}
+
+.download-btn:hover {
+    background: #BB2605;
+    transition:  0.3s;
+}
+
+.reddish {
+    color: #f55150;
+}
+
+
+
+
+
+/* Footer */
+
+#mobileapp{
+    height: 610px;
+    background-color: #2e2e38;
+    color: white;
+}
+
+#mobileapp .container {
+    padding: 120px 20px;
+}
+
+#mobileapp h4 {
+    20px;
+}
+
+#mobileapp p {
+    font-family: 'HelveticaNeue-Thin';
+    color: #fff;
+
+}
+
+.ul-posts li {
+    font-size: 15px;
+    line-height: 20px;
+    margin-bottom: 30px;
+    padding-left: 70px;
+}
+
+.ul-tweets li {
+    font-size: 15px;
+}
+
+.reddish-bg {
+    background: url('../img/rectangle1.png') no-repeat; 
+}
+
+.block {
+    display: block;
+}
+
+.col-4-footer {
+    width: 33.33%;
+    float: left; 
+    
+    color: white;
+    padding: 0px 45px;
+}
+
+.ul-posts, .ul-tweets, .ul-about {
+    font-family: 'HelveticaNue-Thin';
+    position: relative;
+    margin-top: 20px;
+    font-size: 15px;
+    
+}
+
+.ul-about {
+    line-height: 1.25;
+}
+
+.logo-footer {
+    padding: 5px 0px 75px 0px;
+    
+}
+
+.col-4-app h4 {
+    padding-bottom: 27px;
+}
+
+p-about {
+    font-size: 15px;
+    font-style: italic;
+    margin-top: 25px;
+    color: white;
+    
+}
+
+.ul-tweets li {
+    list-style: none;
+    margin-bottom: 25px;
+}
+
+.smallText {
+    font-size: 11px;
+    margin-top: 5px; 
+}
+
+
+
+
+
+/* COPYRIGHT  */
+
+
+.copyright .container {
+    padding: 40px; 
+    text-align: center;
+}
+
+.copyright {
+    background: #d7dedc;
+}
+
+.inline {
+    display: inline-block;
+    font-size: 20px;
+    vertical-align: middle;
+}
+
+.cr, .me{
+    margin-right: 40px;
+}
+
+.fb, .tw {
+    margin-right: 40px;
+}
+
+.dr, .tw {
+    margin-right: 40px;
+}
+
+
+
+.cr:after, .me:after {
+    content: "";
+     border: 1px solid #555555;
+    margin-left: 35px;
+}
+
+
+
+#nose .container {}
+
+/* Animations */
+
+.iphone-on {
+    position: absolute; 
+    right: 175px;
+    top: 112px;
+    width: 54%;
+}
+
+.iphone-btn {
+    position: absolute;
+    right: 215px;
+}
+
+.js-wp-2 {
+    opacity: 0;
+}
+
+.js-wp-2.animated {
+    opacity: 1;
+}
+
+.js-wp-3 {
+    opacity: 0;
+    animation-delay: 3.2s;
+}
+
+.js-wp-3.animated {
+    opacity: 1;
+}
+
+/* Media Queries / Responsiveness */
+
+
+@media only screen and (max-width: 1117px){
+    .cta {
+        padding-right: 40px;
+        padding-left: 40px;
+    }
+    
+    .download-info {
+        width: 75%;
+    }
+    
+    
+}
+
+@media only screen and (max-width: 994px){
+    .images {
+        margin-top: 20px;
+        
+    }
+    
+    
+}
+
+@media only screen and (max-width: 928px) {
+    .hero-paragraph {
+        margin: 0 auto;
+        width: 95%;
+    }
+    
+}
+
+@media only screen and (max-width: 912px){
+    .iphone,
+    .iphone-on,
+    .iphone-btn {
+        display: none;
+    }
+    
+        .hero-paragraph {
+        position: relative;
+        left: 150px;
+    }
+    
+     .cta-info{
+        width: 100%; 
+        text-align: center;
+        padding-left: 100px;
+    }
+    .cta-info h2 {
+        width: 600px;
+    }
+    
+    
+}
+
+@media only screen and (max-width: 825px){
+    
+     .cta-info{
+        width: 100%; 
+        text-align: center;
+        padding-left: 50px;
+    }
+    
+    .col-4-app {
+        width: 100%;
+        float: none;
+        margin-bottom: 50px;
+    }
+    
+    .navbar {
+        overflow: hidden;
+        position: absolute;
+        right: 30px;
+        top: 50px;
+        display: block;
+        z-index: 1000;
+    }
+    
+    .burger-nav {
+        background: url(../Img/hamburger.png) no-repeat 100% center;
+        display: block;
+        height: 31px;
+        width: 40px;
+        cursor: pointer;
+        float: right;
+        margin: 10px;
+    }
+    
+    .container nav ul {
+        height: 0px;
+        overflow: hidden;
+        background: #282828;
+        border-radius: 5px;
+    }
+    
+    .container nav ul.open {
+        height: auto;
+        clear: both;
+    }
+    
+       .container nav ul li {
+            float: none;
+            text-align: right;
+            width: auto;
+            margin: 0;
+            display: block;
+    }
+    .container nav ul li a{
+            color: #fff;
+            padding: 10px;
+            display: block;
+            margin: 0;
+    }
+    .container nav ul li a:hover{
+            border: none;
+            color: #282828;
+            background: #fff;
+
+}
+
+@media only screen and (max-width: 768px) {
+    
+     .cta-info{
+        width: 100%; 
+        text-align: center;
+        padding-left: 50px;
+    }
+    
+    .hero-paragraph {
+        position: relative;
+        left: 150px;
+    }
+    
+    .logo-footer {
+        position: relative;
+        top: -50px;
+        padding-bottom: 10px;
+        
+    }
+    .col-4-footer {
+        width: 100%;
+        float: none;
+        position: relative;
+        top: -30px;
+    }
+    
+    #mobileapp {
+        height: 700px;
+    } 
+}
+
+@media only screen and (max-width: 763px) {
+    
+     .cta-info{
+        width: 100%; 
+        text-align: center;
+        padding-left: 50px;
+    }
+    .cr:after, 
+    .me:after {
+        display: none;
+}
+}
+
+@media only screen and (max-width: 640px) {
+    .cta-info{
+        width: 80%; 
+        text-align: center;
+        padding-left: 40px;
+    }
+    
+    .cta-info h2 {
+        margin-left: -85px; 
+    }
+    
+    .hero-paragraph{
+        position: relative;
+        left: 50px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    #hero{
+        height: 950px
+    }
+    .cta-info{
+        width: 105%; 
+        text-align: center;
+        padding-left: 40px;
+    }
+    
+    .cta-info h2 {
+        padding-left: 25px;
+        width: 150%;
+    }
+    
+    .hero-paragraph{
+        position: relative;
+        left: -65px;
+    }
+
+#nose {
+    height: 980px
+}
+
+    #mobileapp {
+        height: 720px;
+    }
+
+.cta-button {
+    width: 00px; 
+    position: relative;
+    left: -40px;
+}
+}
+    
+    @media only screen and (max-width: 400px){
+               #hero{
+        height: 1150px
+    }
+        #mobileapp{
+            height: 770px;
+        }
+    }
+
+@media only screen and (max-width: 380px) {
+    #hero{
+        height: 1050px
+    }
+    .cta-info{
+        width: 105%; 
+        text-align: center;
+        
+    }
+    
+    .cta-info h2 {
+         
+       
+    }
+
+    .hero-paragraph{
+        
+        
+    }
+    
+    .cta-button {
+
+}
+
+    #nose {
+        position: absolute;
+}
+    
+    .download-info {
+        
+    }
+
+      #mobileapp{
+            height: 770px;
+        }
+}
+
+@media only screen and (max-width: 375px){
+    
+    .cta {
+        border: 2px solid green;
+        width: 95%;
+        margin: 0 auto; 
+    }
+    .cta-info {
+        width: 300px;
+    }
+    .cta-button {
+        border: 2px solid green;
+        padding: 15px 0 15px 0;
+    }
+    
+    .cta-button img{
+        margin-left: 10px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
